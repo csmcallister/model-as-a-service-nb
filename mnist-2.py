@@ -1,10 +1,8 @@
-import argparse
-import json
-import os
-
-import keras_ocr
-import numpy as np
 import tensorflow as tf
+import argparse
+import os
+import numpy as np
+import json
 
 
 def model(x_train, y_train, x_test, y_test):
