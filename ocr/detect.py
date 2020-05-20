@@ -62,7 +62,7 @@ def model(dataset: list, model_dir: str) -> keras_ocr.detection.Detector:
     detector.model.fit_generator(
         generator=training_generator,
         steps_per_epoch=math.ceil(len(train) / batch_size),
-        epochs=10,
+        epochs=1,
         workers=0, # execute the generator on the main thread
         callbacks=[
             tf.keras.callbacks.EarlyStopping(
@@ -121,4 +121,7 @@ if __name__ == "__main__":
 
     if args.current_host == args.hosts[0]:
         # save model to an S3 directory with version number '001'
-        detector.save(os.path.join(model_dir, '001'), 'detecotr_model.h5')
+        detector.model.save(
+            os.path.join(model_dir, '001'),
+            'detecotr_model.h5'
+        )
