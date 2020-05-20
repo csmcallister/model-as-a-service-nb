@@ -1,0 +1,4 @@
+keras-ocr==0.6.3
+opencv-python==4.2.0.34
+scikit-learn==0.22.2.post1
+Shapely==1.7.0
