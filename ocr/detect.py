@@ -77,7 +77,7 @@ def model(dataset: list, model_dir: str) -> keras_ocr.detection.Detector:
         validation_steps=math.ceil(len(validation) / batch_size)
     )
 
-    # TODO: add model.evaluate()
+    # TODO: add detector.model.evaluate()
 
     return detector
 
@@ -102,7 +102,6 @@ def _parse_args():
     parser.add_argument("--image_height", type=int, default=640)
 
     # TODO: add augment options
-    # TODO: add input size for generator_kwargs
 
     return parser.parse_known_args()
 
