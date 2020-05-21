@@ -128,5 +128,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#data
+icdar2013/
+
 # cdk
 cdk.out
+
+# data
+icdar2013/
