@@ -24,7 +24,7 @@ aws-cdk.custom-resources==1.39.0
 aws-cdk.cx-api==1.39.0
 aws-cdk.region-info==1.39.0
 backcall==0.1.0
-bleach==3.1.4
+bleach==3.3.0
 cachetools==4.1.0
 cattrs==1.0.0
 certifi==2020.4.5.1
